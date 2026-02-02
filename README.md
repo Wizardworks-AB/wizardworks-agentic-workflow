@@ -15,18 +15,43 @@ Detta repo dokumenterar **hur** vi på Wizardworks arbetar med AI-agenter i mjuk
 
 Agenter är kraftfulla verktyg som kan accelerera utveckling dramatiskt – men ansvaret för kvalitet, säkerhet och arkitektur ligger alltid hos människan.
 
-## Kom igång
+## Dokumentation
 
-Se [Wiki](https://github.com/Wizardworks-AB/wizardworks-agentic-workflow/wiki) för fullständig dokumentation.
+📖 **[Läs dokumentationen](docs/Home.md)**
 
 ### Snabbstart
 
 1. Sätt upp Claude Code enligt [claude-code](https://github.com/Wizardworks-AB/claude-code)
-2. Läs [AI-First Human Responsibility](https://github.com/Wizardworks-AB/wizardworks-agentic-workflow/wiki/AI-First-Human-Responsibility) för grundfilosofin
+2. Läs [AI-First Human Responsibility](docs/AI-First-Human-Responsibility.md) för grundfilosofin
 3. Välj workflow baserat på uppgift:
-   - [New Feature](https://github.com/Wizardworks-AB/wizardworks-agentic-workflow/wiki/New-Feature)
-   - [Bug Investigation](https://github.com/Wizardworks-AB/wizardworks-agentic-workflow/wiki/Bug-Investigation)
-   - [Code Review](https://github.com/Wizardworks-AB/wizardworks-agentic-workflow/wiki/Code-Review-With-Agent)
+   - [New Feature](docs/New-Feature.md)
+   - [Bug Investigation](docs/Bug-Investigation.md)
+   - [Code Review](docs/Code-Review-With-Agent.md)
+   - [Greenfield Fullstack](docs/Greenfield-Lovable-Fullstack.md)
+
+## Innehåll
+
+### Filosofi
+- [AI-First Human Responsibility](docs/AI-First-Human-Responsibility.md)
+- [When Agents, When Manual](docs/When-Agents-When-Manual.md)
+
+### Arbetsflöden
+- [New Feature](docs/New-Feature.md)
+- [Bug Investigation](docs/Bug-Investigation.md)
+- [Code Review With Agent](docs/Code-Review-With-Agent.md)
+
+### Samarbete
+- [Developer-Agent Dynamics](docs/Developer-Agent-Dynamics.md)
+
+### Kvalitet
+- [Code Review Checklist](docs/Code-Review-Checklist.md)
+
+### Prompting
+- [Effective Instructions](docs/Effective-Instructions.md)
+- [Common Pitfalls](docs/Common-Pitfalls.md)
+
+### Case Studies
+- [Greenfield Lovable Fullstack](docs/Greenfield-Lovable-Fullstack.md)
 
 ## Bidra
 
