@@ -25,6 +25,7 @@ Välkommen till Wizardworks guide för agentisk utveckling.
 ## Kvalitet
 
 - [Code-Review-Checklist](Code-Review-Checklist.md) – Vad du ALLTID ska kolla
+- [Testing-AI-Generated-Code](Testing-AI-Generated-Code.md) – Teststrategier och verktyg
 - [Security-Considerations](Security-Considerations.md) – Säkerhetstänk med agenter
 - [When-To-Say-No](When-To-Say-No.md) – När agenten har fel
 

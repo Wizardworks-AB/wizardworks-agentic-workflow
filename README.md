@@ -45,6 +45,7 @@ Agenter är kraftfulla verktyg som kan accelerera utveckling dramatiskt – men 
 
 ### Kvalitet
 - [Code Review Checklist](docs/Code-Review-Checklist.md)
+- [Testing AI-Generated Code](docs/Testing-AI-Generated-Code.md)
 
 ### Prompting
 - [Effective Instructions](docs/Effective-Instructions.md)
