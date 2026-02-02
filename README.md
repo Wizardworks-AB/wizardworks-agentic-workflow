@@ -19,6 +19,13 @@ Agenter är kraftfulla verktyg som kan accelerera utveckling dramatiskt – men 
 
 📖 **[Läs dokumentationen](docs/Home.md)**
 
+### Helhetsbilden
+
+**[Development Lifecycle](docs/Development-Lifecycle.md)** – Komplett guide från krav till produktion:
+```
+Krav → Design → Implementation → Test → Deploy → Produktion
+```
+
 ### Snabbstart
 
 1. Sätt upp Claude Code enligt [claude-code](https://github.com/Wizardworks-AB/claude-code)

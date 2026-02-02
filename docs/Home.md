@@ -2,6 +2,10 @@
 
 Välkommen till Wizardworks guide för agentisk utveckling.
 
+## Start här
+
+- **[Development-Lifecycle](Development-Lifecycle.md)** – Komplett livscykel från krav till produktion
+
 ## Filosofi
 
 - [AI-First-Human-Responsibility](AI-First-Human-Responsibility.md) – Grundprincipen bakom allt vi gör
