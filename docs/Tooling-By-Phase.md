@@ -6,11 +6,11 @@ Rekommenderade verktyg och tekniker för varje fas i utvecklingslivscykeln.
 
 | Fas | Primära verktyg |
 |-----|-----------------|
-| Krav | Linear, Notion, Figma |
+| Krav | Azure DevOps, Figma |
 | Design | Mermaid, OpenAPI, draw.io |
 | Implementation | Claude Code, VS Code, Rider |
 | Test | xUnit, Playwright, Stryker |
-| Deploy | GitHub Actions, Azure, Docker |
+| Deploy | Azure DevOps Pipelines, GitHub Actions |
 | Produktion | Application Insights, Sentry |
 
 ---
@@ -21,17 +21,17 @@ Rekommenderade verktyg och tekniker för varje fas i utvecklingslivscykeln.
 
 | Verktyg | Användning | Kommentar |
 |---------|------------|-----------|
-| **[Linear](https://linear.app/)** | Issues, sprints, roadmap | Snabbt, bra UX, git-integration |
-| [Jira](https://www.atlassian.com/software/jira) | Enterprise backlog | Kraftfullt men tungt |
-| [GitHub Issues](https://github.com/features/issues) | Enkel issue tracking | Gratis, nära koden |
+| **[Azure DevOps Boards](https://azure.microsoft.com/en-us/products/devops/boards)** | Work items, sprints, backlog | Vår standard - integrerat med repos & pipelines |
+| [GitHub Issues](https://github.com/features/issues) | Enkel issue tracking | För open source / mindre projekt |
+| [Linear](https://linear.app/) | Issues, sprints | Alternativ med bra UX |
 
 ### Dokumentation
 
 | Verktyg | Användning | Kommentar |
 |---------|------------|-----------|
-| **[Notion](https://notion.so/)** | Kravdokumentation, wiki | Flexibelt, bra för samarbete |
-| [Confluence](https://www.atlassian.com/software/confluence) | Enterprise wiki | Jira-integration |
+| **[Azure DevOps Wiki](https://learn.microsoft.com/en-us/azure/devops/project/wiki/)** | Projektdokumentation | Integrerat med DevOps |
 | Markdown i repo | Teknisk dokumentation | Versionshanterad |
+| [Notion](https://notion.so/) | Intern wiki, knowledge base | Flexibelt för ej-tekniskt |
 
 ### Design & Prototyping
 
@@ -128,7 +128,8 @@ User: Skapa OpenAPI spec för user registration endpoint.
 
 | Verktyg | Användning | Kommentar |
 |---------|------------|-----------|
-| **Git + GitHub** | Versionskontroll | Standard |
+| **[Azure Repos](https://azure.microsoft.com/en-us/products/devops/repos)** | Git hosting | För kundprojekt i Azure DevOps |
+| **Git + GitHub** | Git hosting | För interna/open source projekt |
 | [Conventional Commits](https://www.conventionalcommits.org/) | Commit-format | `feat:`, `fix:`, `docs:` |
 | [Husky](https://typicode.github.io/husky/) | Git hooks | Pre-commit validering |
 
@@ -218,8 +219,12 @@ User: Kör mutation testing på OrderService och förbättra
 
 | Verktyg | Användning | Kommentar |
 |---------|------------|-----------|
-| **[GitHub Actions](https://github.com/features/actions)** | CI/CD pipelines | Vår standard |
-| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops) | Enterprise CI/CD | Alternativ |
+| **[Azure DevOps Pipelines](https://azure.microsoft.com/en-us/products/devops/pipelines)** | CI/CD pipelines | Vår standard för kundprojekt |
+| **[GitHub Actions](https://github.com/features/actions)** | CI/CD pipelines | För GitHub-hostade repos |
+
+**När använda vad:**
+- **Azure DevOps Pipelines** - Kundprojekt, .NET, Azure-deploy, behöver Boards-integration
+- **GitHub Actions** - Open source, GitHub-repos, snabba workflows
 
 ### Infrastructure as Code
 
@@ -331,14 +336,14 @@ User: Analysera dessa Application Insights logs och identifiera:
 - **Cloud:** Azure
 - **IaC:** Bicep
 - **Containers:** Docker → Azure Container Apps
-- **CI/CD:** GitHub Actions
+- **CI/CD:** Azure DevOps Pipelines / GitHub Actions
 - **Secrets:** Azure Key Vault
 
 ### Development
 - **AI:** Claude Code
-- **Editor:** VS Code
-- **Version Control:** Git + GitHub
-- **Project Management:** Linear
+- **Editor:** VS Code / Rider
+- **Version Control:** Azure Repos / GitHub
+- **Project Management:** Azure DevOps Boards
 
 ---
 
