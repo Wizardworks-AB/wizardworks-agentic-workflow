@@ -26,6 +26,8 @@ Agenter är kraftfulla verktyg som kan accelerera utveckling dramatiskt – men 
 Krav → Design → Implementation → Test → Deploy → Produktion
 ```
 
+**[Tooling By Phase](docs/Tooling-By-Phase.md)** – Verktyg och tekniker för varje fas
+
 ### Snabbstart
 
 1. Sätt upp Claude Code enligt [claude-code](https://github.com/Wizardworks-AB/claude-code)

@@ -5,6 +5,7 @@ Välkommen till Wizardworks guide för agentisk utveckling.
 ## Start här
 
 - **[Development-Lifecycle](Development-Lifecycle.md)** – Komplett livscykel från krav till produktion
+- **[Tooling-By-Phase](Tooling-By-Phase.md)** – Verktyg och tekniker för varje fas
 
 ## Filosofi
 
