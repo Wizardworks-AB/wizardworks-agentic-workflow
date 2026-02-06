@@ -5,8 +5,8 @@ Hur du bygger en ny feature med agent-assistans.
 ## Översikt
 
 ```
-1. Planering    →  2. TDD Red     →  3. TDD Green   →  4. Review     →  5. Ship
-   (Agent+Du)       (Agent)           (Agent)           (Agent+Du)       (Du)
+1. Planering  →  2. TDD Red  →  3. TDD Green  →  4. Review  →  5. Ship  →  6. Reflektera
+   (Agent+Du)     (Agent)        (Agent)          (Agent+Du)    (/commit)    (/insight)
 ```
 
 ## Steg för steg
@@ -94,10 +94,33 @@ För säkerhetskänslig kod:
 
 **Mål**: Säker deploy till produktion.
 
-1. Skapa PR med beskrivning
-2. CI/CD kör automatiska checks
-3. Manuell QA om tillämpligt
-4. Merge och deploy
+```
+/commit
+```
+
+`/commit` kör automatiskt:
+1. Code review mot Patterns & Practices
+2. Genererar kort feature-dokumentation
+3. Om godkänd → commit + push
+4. Om underkänd → visar issues, frågar hur du vill gå vidare
+
+Sedan:
+1. CI/CD kör automatiska checks
+2. Manuell QA om tillämpligt
+3. Merge och deploy
+
+### 6. Reflektera
+
+**Mål**: Lär av processen.
+
+```
+/insight
+```
+
+Kör `/insight` efter varje feature (eller i slutet av dagen) för att:
+- Identifiera återkommande misstag
+- Spara insikter till memory
+- Förbättra framtida arbete
 
 ## Exempel: User Registration
 

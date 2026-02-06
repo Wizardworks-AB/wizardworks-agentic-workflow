@@ -2,8 +2,11 @@
 
 Välkommen till Wizardworks guide för agentisk utveckling.
 
+> **Ny här?** Börja med **[Quick Start](Quick-Start.md)** — en 2-minuters översikt.
+
 ## Start här
 
+- **[Quick-Start](Quick-Start.md)** – TL;DR: så här jobbar vi (2 min läsning)
 - **[Development-Lifecycle](Development-Lifecycle.md)** – Komplett livscykel från krav till produktion
 - **[Tooling-By-Phase](Tooling-By-Phase.md)** – Verktyg och tekniker för varje fas
 
@@ -11,6 +14,7 @@ Välkommen till Wizardworks guide för agentisk utveckling.
 
 - [AI-First-Human-Responsibility](AI-First-Human-Responsibility.md) – Grundprincipen bakom allt vi gör
 - [When-Agents-When-Manual](When-Agents-When-Manual.md) – När ska du använda agenter vs göra själv?
+- [Vision](Vision.md) – Vart vi är på väg: orchestrators, proaktiv övervakning, tidsfönster
 
 ## Arbetsflöden
 
@@ -31,6 +35,7 @@ Välkommen till Wizardworks guide för agentisk utveckling.
 
 - [Code-Review-Checklist](Code-Review-Checklist.md) – Vad du ALLTID ska kolla
 - [Testing-AI-Generated-Code](Testing-AI-Generated-Code.md) – Teststrategier och verktyg
+- [Documentation-Standard](Documentation-Standard.md) – Hur vi dokumenterar (format, var, när)
 - [Security-Considerations](Security-Considerations.md) – Säkerhetstänk med agenter
 - [When-To-Say-No](When-To-Say-No.md) – När agenten har fel
 
@@ -39,6 +44,11 @@ Välkommen till Wizardworks guide för agentisk utveckling.
 - [Effective-Instructions](Effective-Instructions.md) – Skriv bättre instruktioner
 - [Context-Management](Context-Management.md) – Hantera långa sessioner
 - [Common-Pitfalls](Common-Pitfalls.md) – Vanliga misstag att undvika
+
+## Kundprojekt & Setup
+
+- [Client-Agent-Setup](Client-Agent-Setup.md) – Kundspecifik Claude: förberedelse, delning, överlämning
+- [Superpowers-Integration](Superpowers-Integration.md) – Superpowers-plugin som komplement
 
 ## Case Studies
 

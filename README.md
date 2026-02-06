@@ -17,7 +17,7 @@ Agenter är kraftfulla verktyg som kan accelerera utveckling dramatiskt – men 
 
 ## Dokumentation
 
-📖 **[Läs dokumentationen](docs/Home.md)**
+📖 **[Läs dokumentationen](docs/Home.md)** | ⚡ **[Quick Start](docs/Quick-Start.md)** (2 min)
 
 ### Helhetsbilden
 
@@ -43,6 +43,7 @@ Krav → Design → Implementation → Test → Deploy → Produktion
 ### Filosofi
 - [AI-First Human Responsibility](docs/AI-First-Human-Responsibility.md)
 - [When Agents, When Manual](docs/When-Agents-When-Manual.md)
+- [Vision](docs/Vision.md)
 
 ### Arbetsflöden
 - [New Feature](docs/New-Feature.md)
@@ -55,6 +56,11 @@ Krav → Design → Implementation → Test → Deploy → Produktion
 ### Kvalitet
 - [Code Review Checklist](docs/Code-Review-Checklist.md)
 - [Testing AI-Generated Code](docs/Testing-AI-Generated-Code.md)
+- [Documentation Standard](docs/Documentation-Standard.md)
+
+### Kundprojekt & Setup
+- [Client Agent Setup](docs/Client-Agent-Setup.md)
+- [Superpowers Integration](docs/Superpowers-Integration.md)
 
 ### Prompting
 - [Effective Instructions](docs/Effective-Instructions.md)
