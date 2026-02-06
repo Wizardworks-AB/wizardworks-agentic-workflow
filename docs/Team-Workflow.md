@@ -26,7 +26,7 @@ Hur flera arkitekter och utvecklare samarbetar med AI-agenter i samma kundprojek
 Agent-kontext och kundens kod lever som syskon — aldrig i samma repo:
 
 ```
-~/clients/
+~/
 ├── agents/
 │   ├── bokio-agent/                    ← Git repo (Wizardworks privat)
 │   │   ├── CLAUDE.md                   ← Delad kontext om kunden
@@ -220,7 +220,7 @@ Varje kundprojekts CLAUDE.md berättar för agenten om strukturen:
 [Beskrivning av kundens verksamhet]
 
 ## Kod
-Kundens kod finns i: `~/clients/code/bokio/project-a/`
+Kundens kod finns i: `~/code/bokio/project-a/`
 Git-operationer (branch, commit, push) körs därifrån.
 Ändra ALDRIG filer i detta agent-repo förutom humans/ och shared/.
 
@@ -243,8 +243,8 @@ Backlog finns i Azure DevOps: [länk till board]
 ### 1. Skapa agent-repo
 
 ```bash
-mkdir -p ~/clients/agents/bokio-agent
-cd ~/clients/agents/bokio-agent
+mkdir -p ~/agents/bokio-agent
+cd ~/agents/bokio-agent
 git init
 
 # Kopiera template från claude-code
@@ -265,8 +265,8 @@ git push -u origin master
 ### 2. Klona kundens kod
 
 ```bash
-mkdir -p ~/clients/code/bokio
-cd ~/clients/code/bokio
+mkdir -p ~/code/bokio
+cd ~/code/bokio
 git clone <kundens-repo-url> project-a
 ```
 
@@ -281,18 +281,20 @@ git clone <kundens-repo-url> project-a
 
 ```bash
 # Mia klonar agent-repot
-git clone git@github.com:Wizardworks-AB/bokio-agent.git ~/clients/agents/bokio-agent
+git clone git@github.com:Wizardworks-AB/bokio-agent.git ~/agents/bokio-agent
 
 # Mia klonar kundens kod
-git clone <kundens-repo-url> ~/clients/code/bokio/project-a
+git clone <kundens-repo-url> ~/code/bokio/project-a
 ```
 
 ---
 
-## Framtid: MCP-integration med Azure DevOps
+## Planerat: MCP-integration med Azure DevOps
 
 Idag: Människa copy/pastar task-beskrivning till agenten.
-Framtid: Agent läser direkt från DevOps via MCP.
+Nästa steg: Agent läser direkt från DevOps via MCP.
+
+**Status:** Ej installerat ännu — står på att-göra-listan.
 
 ```
 Agent ←→ MCP Server ←→ Azure DevOps API
@@ -308,6 +310,11 @@ Agent ←→ MCP Server ←→ Azure DevOps API
 - "Markera klar" → Agent uppdaterar DevOps
 
 Detta är den MCP-server som diskuterades i Lunch & Learn — DevOps-integration + Harvest-tidrapportering i samma server.
+
+**TODO:**
+- [ ] Sätta upp MCP-server för Azure DevOps
+- [ ] Integrera Harvest-tidrapportering i samma server
+- [ ] Testa med ett pilotprojekt
 
 ---
 

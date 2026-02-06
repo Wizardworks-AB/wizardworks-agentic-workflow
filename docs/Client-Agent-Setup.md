@@ -76,7 +76,7 @@ Agent-kontext och kundens kod lever som syskon — vår CLAUDE.md, `.claude/` oc
 **Kort sammanfattning:**
 
 ```
-~/clients/
+~/
 ├── agents/
 │   └── bokio-agent/           ← Wizardworks privat Git-repo
 │       ├── CLAUDE.md           ← Delad kontext om kunden
