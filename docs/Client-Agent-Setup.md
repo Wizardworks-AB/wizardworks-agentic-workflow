@@ -71,34 +71,29 @@ Varje sprint/iteration:
 
 ## Delning inom teamet
 
-### Versionhantering via Git
+Agent-kontext och kundens kod lever som syskon — vår CLAUDE.md, `.claude/` och memory hamnar **aldrig** i kundens repo. Se **[Team Workflow](Team-Workflow.md)** för komplett katalogstruktur, koordinering mellan arkitekter, och dagligt arbetsflöde.
 
-**CLAUDE.md och `.claude/`** ska ligga i projektets repo:
+**Kort sammanfattning:**
 
 ```
-kundprojekt/
-├── CLAUDE.md              ← Projektspecifik kontext
-├── .claude/               ← Agents, commands, hooks, rules
-│   ├── agents/
-│   ├── commands/
-│   ├── hooks/
-│   ├── rules/
-│   └── memory/            ← Delade insikter och kontext
-├── src/
-└── tests/
+~/clients/
+├── agents/
+│   └── bokio-agent/           ← Wizardworks privat Git-repo
+│       ├── CLAUDE.md           ← Delad kontext om kunden
+│       ├── .claude/            ← Agents, hooks, rules
+│       ├── humans/             ← Per-person status och kontext
+│       │   ├── daniel/
+│       │   └── mia/
+│       └── shared/             ← Delade insikter
+└── code/
+    └── bokio/
+        └── project-a/          ← Kundens repo (deras Git)
 ```
 
-**Vad detta ger:**
-- Alla i teamet får samma kontext automatiskt via `git pull`
-- Ändringar i CLAUDE.md trackas i Git-historik
-- Ny arkitekt kan onboarda genom att läsa CLAUDE.md
-
-### Memory-delning
-
-Claude Codes egna memory (`~/.claude/`) är personlig och synkas inte. För delad kontext:
-- Lägg viktiga insikter i `CLAUDE.md` (versionhanterat)
-- Använd `.claude/memory/` i projektets repo för delade anteckningar
-- Personliga minnesanteckningar stannar i personlig memory
+- **Agent-repot** delas mellan arkitekter via Git (Wizardworks privat)
+- **Kundens kod** är separat — vår IP rör aldrig deras repo
+- **Per-person kontext** i `humans/` — undviker merge-konflikter
+- **Delade insikter** i `shared/` — alla ser samma
 
 ---
 

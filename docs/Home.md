@@ -45,8 +45,9 @@ Välkommen till Wizardworks guide för agentisk utveckling.
 - [Context-Management](Context-Management.md) – Hantera långa sessioner
 - [Common-Pitfalls](Common-Pitfalls.md) – Vanliga misstag att undvika
 
-## Kundprojekt & Setup
+## Kundprojekt & Teamarbete
 
+- [Team-Workflow](Team-Workflow.md) – Hur flera arkitekter samarbetar med agenter i samma projekt
 - [Client-Agent-Setup](Client-Agent-Setup.md) – Kundspecifik Claude: förberedelse, delning, överlämning
 - [Superpowers-Integration](Superpowers-Integration.md) – Superpowers-plugin som komplement
 

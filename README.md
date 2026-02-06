@@ -58,7 +58,8 @@ Krav → Design → Implementation → Test → Deploy → Produktion
 - [Testing AI-Generated Code](docs/Testing-AI-Generated-Code.md)
 - [Documentation Standard](docs/Documentation-Standard.md)
 
-### Kundprojekt & Setup
+### Kundprojekt & Teamarbete
+- [Team Workflow](docs/Team-Workflow.md)
 - [Client Agent Setup](docs/Client-Agent-Setup.md)
 - [Superpowers Integration](docs/Superpowers-Integration.md)
 
